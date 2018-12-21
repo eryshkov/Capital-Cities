@@ -14,6 +14,8 @@
 		5C626BBE21CCC48A00E2A042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C626BBC21CCC48A00E2A042 /* LaunchScreen.storyboard */; };
 		5C626BC721CCD14900E2A042 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C626BC621CCD14900E2A042 /* MapKit.framework */; };
 		5C626BC921CCD38800E2A042 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C626BC821CCD38800E2A042 /* Capital.swift */; };
+		5C626BD121CCE69400E2A042 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5C626BCF21CCE69400E2A042 /* 2.jpeg */; };
+		5C626BD221CCE69400E2A042 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5C626BD021CCE69400E2A042 /* 1.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		5C626BBF21CCC48A00E2A042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C626BC621CCD14900E2A042 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5C626BC821CCD38800E2A042 /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
+		5C626BCD21CCE57900E2A042 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5C626BCF21CCE69400E2A042 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		5C626BD021CCE69400E2A042 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,8 @@
 		5C626BA721CCC48800E2A042 = {
 			isa = PBXGroup;
 			children = (
+				5C626BCE21CCE68600E2A042 /* screens */,
+				5C626BCD21CCE57900E2A042 /* README.md */,
 				5C626BCC21CCD3AE00E2A042 /* Model */,
 				5C626BCB21CCD3A700E2A042 /* View */,
 				5C626BCA21CCD39A00E2A042 /* Controller */,
@@ -101,6 +108,15 @@
 				5C626BC821CCD38800E2A042 /* Capital.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5C626BCE21CCE68600E2A042 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				5C626BD021CCE69400E2A042 /* 1.jpeg */,
+				5C626BCF21CCE69400E2A042 /* 2.jpeg */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +182,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C626BD221CCE69400E2A042 /* 1.jpeg in Resources */,
+				5C626BD121CCE69400E2A042 /* 2.jpeg in Resources */,
 				5C626BBE21CCC48A00E2A042 /* LaunchScreen.storyboard in Resources */,
 				5C626BBB21CCC48A00E2A042 /* Assets.xcassets in Resources */,
 				5C626BB921CCC48800E2A042 /* Main.storyboard in Resources */,
