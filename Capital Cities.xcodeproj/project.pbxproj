@@ -12,6 +12,7 @@
 		5C626BB921CCC48800E2A042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C626BB721CCC48800E2A042 /* Main.storyboard */; };
 		5C626BBB21CCC48A00E2A042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C626BBA21CCC48A00E2A042 /* Assets.xcassets */; };
 		5C626BBE21CCC48A00E2A042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C626BBC21CCC48A00E2A042 /* LaunchScreen.storyboard */; };
+		5C626BC721CCD14900E2A042 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C626BC621CCD14900E2A042 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5C626BBA21CCC48A00E2A042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C626BBD21CCC48A00E2A042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C626BBF21CCC48A00E2A042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C626BC621CCD14900E2A042 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C626BC721CCD14900E2A042 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				5C626BB221CCC48800E2A042 /* Capital Cities */,
 				5C626BB121CCC48800E2A042 /* Products */,
+				5C626BC521CCD14900E2A042 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				5C626BBF21CCC48A00E2A042 /* Info.plist */,
 			);
 			path = "Capital Cities";
+			sourceTree = "<group>";
+		};
+		5C626BC521CCD14900E2A042 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C626BC621CCD14900E2A042 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +108,11 @@
 				TargetAttributes = {
 					5C626BAF21CCC48800E2A042 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
