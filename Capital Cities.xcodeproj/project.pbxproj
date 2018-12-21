@@ -13,6 +13,7 @@
 		5C626BBB21CCC48A00E2A042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C626BBA21CCC48A00E2A042 /* Assets.xcassets */; };
 		5C626BBE21CCC48A00E2A042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C626BBC21CCC48A00E2A042 /* LaunchScreen.storyboard */; };
 		5C626BC721CCD14900E2A042 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C626BC621CCD14900E2A042 /* MapKit.framework */; };
+		5C626BC921CCD38800E2A042 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C626BC821CCD38800E2A042 /* Capital.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5C626BBD21CCC48A00E2A042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C626BBF21CCC48A00E2A042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C626BC621CCD14900E2A042 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5C626BC821CCD38800E2A042 /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,10 @@
 		5C626BA721CCC48800E2A042 = {
 			isa = PBXGroup;
 			children = (
-				5C626BB221CCC48800E2A042 /* Capital Cities */,
+				5C626BCC21CCD3AE00E2A042 /* Model */,
+				5C626BCB21CCD3A700E2A042 /* View */,
+				5C626BCA21CCD39A00E2A042 /* Controller */,
+				5C626BB221CCC48800E2A042 /* Other */,
 				5C626BB121CCC48800E2A042 /* Products */,
 				5C626BC521CCD14900E2A042 /* Frameworks */,
 			);
@@ -55,17 +60,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5C626BB221CCC48800E2A042 /* Capital Cities */ = {
+		5C626BB221CCC48800E2A042 /* Other */ = {
 			isa = PBXGroup;
 			children = (
 				5C626BB321CCC48800E2A042 /* AppDelegate.swift */,
-				5C626BB521CCC48800E2A042 /* ViewController.swift */,
-				5C626BB721CCC48800E2A042 /* Main.storyboard */,
 				5C626BBA21CCC48A00E2A042 /* Assets.xcassets */,
-				5C626BBC21CCC48A00E2A042 /* LaunchScreen.storyboard */,
 				5C626BBF21CCC48A00E2A042 /* Info.plist */,
 			);
-			path = "Capital Cities";
+			path = Other;
 			sourceTree = "<group>";
 		};
 		5C626BC521CCD14900E2A042 /* Frameworks */ = {
@@ -74,6 +76,31 @@
 				5C626BC621CCD14900E2A042 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C626BCA21CCD39A00E2A042 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C626BB521CCC48800E2A042 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C626BCB21CCD3A700E2A042 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C626BB721CCC48800E2A042 /* Main.storyboard */,
+				5C626BBC21CCC48A00E2A042 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C626BCC21CCD3AE00E2A042 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C626BC821CCD38800E2A042 /* Capital.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +181,7 @@
 			files = (
 				5C626BB621CCC48800E2A042 /* ViewController.swift in Sources */,
 				5C626BB421CCC48800E2A042 /* AppDelegate.swift in Sources */,
+				5C626BC921CCD38800E2A042 /* Capital.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Z256VMH9HM;
-				INFOPLIST_FILE = "Capital Cities/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Z256VMH9HM;
-				INFOPLIST_FILE = "Capital Cities/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
